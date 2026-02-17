@@ -33,7 +33,7 @@ A production-grade admin dashboard built with Next.js 15 App Router, featuring s
 - [Tech Stack](#-tech-stack)
 - [Folder Structure](#-folder-structure)
 - [Tradeoffs](#-tradeoffs)
-- [Environment Variables](#-environment-variables)
+
 
 ---
 ## 🚀 Setup Instructions
