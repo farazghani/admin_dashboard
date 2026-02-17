@@ -9,7 +9,7 @@ A production-grade admin dashboard built with Next.js 15 App Router, featuring s
 | | |
 |---|---|
 | **GitHub Repository** | `https://github.com/your-username/admin-dashboard` |
-| **Live Demo (Vercel)** | `https://admin-dashboard-your-username.vercel.app` |
+| **Live Demo (Vercel)** | `https://admin-dashboard-q9uardnmr-farazs-projects-5e7e4223.vercel.app/` |
 
 > **Demo Credentials**
 >
