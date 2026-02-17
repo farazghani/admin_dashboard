@@ -405,7 +405,7 @@ admin-dashboard/
 │   ├── prisma.ts                    
 │   ├── supabase.ts                
 │   ├── utils.ts                   
-│   └── constants.ts              
+│   └── upload.ts              
 ├── types/
 │   └── index.ts                     
 ├── prisma/
