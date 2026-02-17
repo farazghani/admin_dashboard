@@ -2,7 +2,7 @@ import { prisma } from "@/lib/prisma"
 import { requireSalesOrAdmin } from "@/lib/rbac"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { requireAdmin } from "@/lib/rbac"
+import { getSession } from "@/lib/session"
 
 
 export default async function ProductsPage({
@@ -52,8 +52,11 @@ export default async function ProductsPage({
     prisma.product.count({ where }),
   ])
 
+
+
   const totalPages = Math.ceil(total / pageSize)
-  const isAdmin = await requireAdmin();
+  const session = await getSession()
+  const isAdmin = session?.role === "ADMIN"
   return (
     <div className="space-y-6">
       <div className="flex justify-between">

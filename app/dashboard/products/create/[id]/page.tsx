@@ -43,7 +43,7 @@ export default async function ProductViewPage({
         {isAdmin && (
           <div className="flex gap-3">
             <Link
-              href={`/dashboard/products/${product.id}/edit`}
+              href={`/dashboard/products/create/${product.id}/edit`}
             >
               <Button variant="outline">
                 Edit

@@ -20,7 +20,8 @@ export async function loginAction(formData: FormData) {
 
   const user = await prisma.user.findUnique({ where: { email } })
   if (!user || user.deletedAt) return { error: "Invalid credentials" }
-
+  console.log("USER FOUND:", user)
+  
   const valid = await comparePassword(password, user.password)
   if (!valid) return { error: "Invalid credentials" }
 
